@@ -1,0 +1,61 @@
+/* TYPING EFFECT */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: bisque;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+.text::after{
+    content: "Hi, I'm Mouad |";
+    font-size: 35px;
+    font-weight: 600;
+    animation: text 1.5s infinite linear;
+}
+@keyframes text{
+    11%{
+        content: 'H|'
+    }
+    22%{
+        content: 'Hi|'
+    }
+    30%{
+        content: 'Hi,|'
+    }
+    38%{
+        content: 'Hi, |'
+    }
+    46%{
+        content: "Hi, I|"
+    }
+    54%{
+        content: "Hi, I'|"
+    }
+    62%{
+        content: "Hi, I'm|"
+    }
+    70%{
+        content: "Hi, I'm |"
+    }
+    78%{
+        content: "Hi, I'm M|"
+    }
+    86%{
+        content: "Hi, I'm Mo|"
+    }
+    94%{
+        content: "Hi, I'm Mou|"
+    }
+    100%{
+        content: "Hi, I'm Moua"
+    }
+    108%{
+        content: "Hi, I'm Mouad|"
+    }
+}
